@@ -9,7 +9,7 @@ description = "Behavioral regression testing for LLMs. Capture outputs, diff beh
 readme = "README.md"
 license = {text = "Apache-2.0"}
 requires-python = ">=3.9"
-authors = [{ name = "Zacharie Bhatti" }]
+authors = [{ name = "Zacharie B" }]
 keywords = [
     "llm",
     "regression",
