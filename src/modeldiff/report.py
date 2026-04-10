@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import json
 from pathlib import Path
-from typing import Any, Dict, List, Optional
+from typing import Any, Dict, List
 
 from modeldiff._types import ChangeType, DiffReport, Severity
 
@@ -158,8 +158,8 @@ def format_markdown(report: DiffReport) -> str:
     lines: List[str] = []
     lines.append(f"# Behavioral Diff: {report.model_a} → {report.model_b}")
     lines.append("")
-    lines.append(f"| Metric | Value |")
-    lines.append(f"|---|---|")
+    lines.append("| Metric | Value |")
+    lines.append("|---|---|")
     lines.append(f"| Total prompts | {len(report.entries)} |")
     lines.append(f"| Changed | {report.n_changes} |")
     lines.append(f"| Change rate | {report.change_rate:.1%} |")

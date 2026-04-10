@@ -2,10 +2,7 @@
 
 from __future__ import annotations
 
-import tempfile
 from pathlib import Path
-
-import pytest
 
 from modeldiff._types import (
     ChangeType,
@@ -15,7 +12,6 @@ from modeldiff._types import (
     Severity,
 )
 from modeldiff.html_report import _escape_html, format_html, save_html
-
 
 # ---------------------------------------------------------------------------
 # Helpers
@@ -210,7 +206,8 @@ class TestSaveHtml:
 
 class TestPublicAPI:
     def test_importable_from_package(self) -> None:
-        from modeldiff import format_html as fh, save_html as sh
+        from modeldiff import format_html as fh
+        from modeldiff import save_html as sh
 
         assert callable(fh)
         assert callable(sh)

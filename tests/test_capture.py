@@ -1,8 +1,8 @@
 """Tests for capture module."""
 
 import json
-import pytest
-from modeldiff._types import Prompt, Snapshot
+
+from modeldiff._types import Prompt
 from modeldiff.capture import capture, capture_from_file
 
 

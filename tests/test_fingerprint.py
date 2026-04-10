@@ -1,6 +1,7 @@
 """Tests for fingerprint module."""
 
 import pytest
+
 from modeldiff._types import Prompt, Response, Snapshot
 from modeldiff.fingerprint import compare_fingerprints, fingerprint
 

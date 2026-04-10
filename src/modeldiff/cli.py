@@ -3,8 +3,6 @@
 from __future__ import annotations
 
 import json
-import sys
-from pathlib import Path
 from typing import Optional
 
 
@@ -28,7 +26,12 @@ def _build_cli():  # type: ignore[no-untyped-def]
         """Diff two snapshots and show behavioral changes."""
         from modeldiff._types import Snapshot
         from modeldiff.diff import diff_snapshots
-        from modeldiff.report import format_markdown, format_report_rich, format_report_text, save_json
+        from modeldiff.report import (
+            format_markdown,
+            format_report_rich,
+            format_report_text,
+            save_json,
+        )
 
         snap_a = Snapshot.load(snapshot_a)
         snap_b = Snapshot.load(snapshot_b)
@@ -88,7 +91,8 @@ def _build_cli():  # type: ignore[no-untyped-def]
     @cli.command(name="suites")
     def list_suites() -> None:
         """List available built-in test suites."""
-        from modeldiff.suite import get_suite, list_suites as _list
+        from modeldiff.suite import get_suite
+        from modeldiff.suite import list_suites as _list
 
         for name in _list():
             prompts = get_suite(name)

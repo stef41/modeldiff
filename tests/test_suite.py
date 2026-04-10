@@ -1,6 +1,7 @@
 """Tests for suite module."""
 
 import pytest
+
 from modeldiff.suite import get_standard_suite, get_suite, list_suites
 
 

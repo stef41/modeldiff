@@ -3,13 +3,12 @@
 from __future__ import annotations
 
 import difflib
-from typing import Dict, List, Optional, Sequence
+from typing import Dict, List
 
 from modeldiff._types import (
     ChangeType,
     DiffEntry,
     DiffReport,
-    Prompt,
     Response,
     Severity,
     Snapshot,

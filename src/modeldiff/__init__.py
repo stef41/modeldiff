@@ -25,6 +25,13 @@ from modeldiff.generator import (
     run_suite,
 )
 from modeldiff.html_report import format_html, save_html
+from modeldiff.parquet import (
+    Column,
+    ParquetTable,
+    format_table,
+    merge_tables,
+    snapshot_to_table,
+)
 from modeldiff.plugin import SnapshotHelper
 from modeldiff.similarity import (
     OutputSimilarity,
@@ -34,13 +41,6 @@ from modeldiff.similarity import (
     format_similarity_report,
     jaccard_similarity,
     levenshtein_distance,
-)
-from modeldiff.parquet import (
-    Column,
-    ParquetTable,
-    format_table,
-    merge_tables,
-    snapshot_to_table,
 )
 
 __all__ = [

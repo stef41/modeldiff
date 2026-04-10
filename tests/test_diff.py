@@ -1,6 +1,5 @@
 """Tests for diff module."""
 
-import pytest
 from modeldiff._types import ChangeType, Prompt, Response, Severity, Snapshot
 from modeldiff.diff import diff_snapshots, diff_text
 

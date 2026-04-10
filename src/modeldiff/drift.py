@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import math
-from typing import Dict, List, Optional
+from typing import Dict, List
 
 from modeldiff._types import Snapshot
 

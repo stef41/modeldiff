@@ -1,6 +1,5 @@
 """Tests for drift module."""
 
-import pytest
 from modeldiff._types import Prompt, Response, Snapshot
 from modeldiff.drift import (
     full_drift_report,

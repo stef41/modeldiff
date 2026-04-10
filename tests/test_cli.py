@@ -1,11 +1,9 @@
 """Tests for CLI module."""
 
-import json
-import tempfile
-from pathlib import Path
 
 import pytest
 from click.testing import CliRunner
+
 from modeldiff._types import Prompt, Response, Snapshot
 from modeldiff.cli import cli
 

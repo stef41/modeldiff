@@ -3,9 +3,9 @@
 from __future__ import annotations
 
 import math
-from typing import Dict, List, Optional, Sequence
+from typing import Dict, List
 
-from modeldiff._types import FingerprintResult, Prompt, Response, Snapshot
+from modeldiff._types import FingerprintResult, Snapshot
 
 
 def fingerprint(snapshot: Snapshot) -> FingerprintResult:

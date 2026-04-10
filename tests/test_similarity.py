@@ -1,6 +1,5 @@
 """Tests for output similarity scoring."""
 
-import math
 
 import pytest
 
@@ -13,7 +12,6 @@ from modeldiff.similarity import (
     jaccard_similarity,
     levenshtein_distance,
 )
-
 
 # --- cosine_similarity ------------------------------------------------------
 

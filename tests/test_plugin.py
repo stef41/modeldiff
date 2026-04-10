@@ -6,9 +6,8 @@ import json
 
 import pytest
 
-from modeldiff._types import Prompt, Snapshot
+from modeldiff._types import Prompt
 from modeldiff.plugin import SnapshotHelper
-
 
 # ---------------------------------------------------------------------------
 # Helpers

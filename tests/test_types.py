@@ -1,8 +1,7 @@
 """Tests for _types module."""
 
-import json
 import pytest
-from pathlib import Path
+
 from modeldiff._types import (
     ChangeType,
     DiffEntry,

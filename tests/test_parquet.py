@@ -1,8 +1,8 @@
 """Tests for modeldiff.parquet module."""
 
 import json
+
 import pytest
-from pathlib import Path
 
 from modeldiff.parquet import (
     Column,
@@ -11,7 +11,6 @@ from modeldiff.parquet import (
     merge_tables,
     snapshot_to_table,
 )
-
 
 # --- Column ---
 

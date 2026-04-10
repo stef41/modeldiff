@@ -1,18 +1,13 @@
 """Tests for report module."""
 
 import json
-import tempfile
-from pathlib import Path
 
-import pytest
 from modeldiff._types import (
     ChangeType,
     DiffEntry,
     DiffReport,
     Prompt,
-    Response,
     Severity,
-    Snapshot,
 )
 from modeldiff.report import (
     format_markdown,

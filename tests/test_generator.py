@@ -3,15 +3,9 @@
 from __future__ import annotations
 
 import json
-import tempfile
-from pathlib import Path
-
-import pytest
 
 from modeldiff._types import Prompt, Response, Snapshot
 from modeldiff.generator import (
-    CaseResult,
-    SuiteResult,
     TestCase,
     TestSuite,
     extract_key_phrases,

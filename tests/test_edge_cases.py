@@ -4,6 +4,7 @@ import json
 import math
 
 import pytest
+
 from modeldiff._types import (
     ChangeType,
     DiffEntry,
@@ -15,7 +16,7 @@ from modeldiff._types import (
     Snapshot,
 )
 from modeldiff.capture import capture, capture_from_file
-from modeldiff.diff import diff_snapshots, diff_text, _text_similarity
+from modeldiff.diff import _text_similarity, diff_snapshots, diff_text
 from modeldiff.drift import (
     full_drift_report,
     latency_drift,
@@ -28,9 +29,9 @@ from modeldiff.report import (
     format_markdown,
     format_report_rich,
     format_report_text,
+    load_json,
     report_to_dict,
     save_json,
-    load_json,
 )
 
 
