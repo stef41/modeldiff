@@ -1,6 +1,6 @@
 """modeldiff — behavioral regression testing for LLMs."""
 
-__version__ = "0.2.0"
+__version__ = "0.3.0"
 
 from modeldiff._types import (
     ChangeType,
