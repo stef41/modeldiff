@@ -26,6 +26,22 @@ from modeldiff.generator import (
 )
 from modeldiff.html_report import format_html, save_html
 from modeldiff.plugin import SnapshotHelper
+from modeldiff.similarity import (
+    OutputSimilarity,
+    SimilarityMetric,
+    SimilarityResult,
+    cosine_similarity,
+    format_similarity_report,
+    jaccard_similarity,
+    levenshtein_distance,
+)
+from modeldiff.parquet import (
+    Column,
+    ParquetTable,
+    format_table,
+    merge_tables,
+    snapshot_to_table,
+)
 
 __all__ = [
     "ChangeType",
@@ -49,4 +65,16 @@ __all__ = [
     "diff_snapshots",
     "format_html",
     "save_html",
+    "OutputSimilarity",
+    "SimilarityMetric",
+    "SimilarityResult",
+    "cosine_similarity",
+    "format_similarity_report",
+    "jaccard_similarity",
+    "levenshtein_distance",
+    "Column",
+    "ParquetTable",
+    "format_table",
+    "merge_tables",
+    "snapshot_to_table",
 ]
