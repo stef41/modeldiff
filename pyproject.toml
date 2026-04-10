@@ -43,6 +43,9 @@ metrics = ["rouge-score>=0.1.2"]
 cli = ["click>=8.0", "rich>=13.0"]
 all = ["modeldiff[metrics,cli]"]
 
+[project.entry-points."pytest11"]
+modeldiff = "modeldiff.plugin"
+
 [project.urls]
 Homepage = "https://github.com/stef41/modeldiff"
 Repository = "https://github.com/stef41/modeldiff"

@@ -13,6 +13,7 @@ from modeldiff._types import (
 )
 from modeldiff.capture import capture
 from modeldiff.diff import diff_snapshots
+from modeldiff.plugin import SnapshotHelper
 
 __all__ = [
     "ChangeType",
@@ -24,6 +25,7 @@ __all__ = [
     "Response",
     "Severity",
     "Snapshot",
+    "SnapshotHelper",
     "capture",
     "diff_snapshots",
 ]
